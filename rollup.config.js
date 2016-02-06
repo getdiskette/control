@@ -4,5 +4,5 @@ export default {
 	entry: "src/main.jsx",
 	format: "es6",
 	plugins: [babel()],
-	dest: "../public/bundle.js"
+	dest: "public/bundle.js"
 };

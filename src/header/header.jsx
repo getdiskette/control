@@ -1,7 +1,4 @@
-let Router = ReactRouter.Router;
-let Route = ReactRouter.Route;
-
-let Header = React.createClass({
+export default React.createClass({
     render() {
         return (
             <header>
@@ -24,11 +21,3 @@ let Header = React.createClass({
         );
     }
 });
-
-ReactDOM.render((
-  <Router>
-    <Route path="/" component={Header}>
-        <Route path="*" component={Header}/>
-    </Route>
-  </Router>
-), document.getElementById("root"))

@@ -1,8 +1,5 @@
-var Router = ReactRouter.Router;
-var Route = ReactRouter.Route;
-
 var Header = React.createClass({
-    displayName: "Header",
+    displayName: "header",
     render: function render() {
         return React.createElement(
             "header",
@@ -83,12 +80,14 @@ var Header = React.createClass({
     }
 });
 
+var Router = ReactRouter.Router;
+var Route = ReactRouter.Route;
 ReactDOM.render(React.createElement(
-    Router,
-    null,
-    React.createElement(
-        Route,
-        { path: "/", component: Header },
-        React.createElement(Route, { path: "*", component: Header })
-    )
+  Router,
+  null,
+  React.createElement(
+    Route,
+    { path: "/", component: Header },
+    React.createElement(Route, { path: "*", component: Header })
+  )
 ), document.getElementById("root"));
