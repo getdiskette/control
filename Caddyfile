@@ -1,4 +1,4 @@
-localhost:5025 {
+localhost:3050 {
     root public
     gzip
 }
